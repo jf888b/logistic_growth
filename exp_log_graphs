@@ -1,4 +1,4 @@
-#Script to plot logarithmic and exponential models
+#Script to plot data and model
 
 growth_data <- read.csv("experiment.csv")
 
@@ -12,15 +12,20 @@ exponential_fun <- function(t) {
   N <- (N0*exp(r*t))
 return(N)}
 
+N0 <- 879 #
+  
+r <- 0.009902 #
+  
+K <- 5.903e+10 #
 
-N0 <- 879 
-r <- 0.009902 
-K <- 5.903e+10 
 
-ggplot(aes(t,N), data = growth_data) +
-  geom_function(fun=logistic_fun, colour="red") +
-  geom_function(fun = exponential_fun, colour = "blue")+
-  scale_y_continuous(trans = 'log10')
+ggplot(data = growth_data, aes(t, N)) +
+  geom_function(aes(colour = "Logistic"), fun = logistic_fun) +  
+  geom_function(aes(colour = "Exponential"), fun = exponential_fun) + 
+  scale_y_continuous(trans = 'log10') +
+  labs( title = "Exponential & Logistic Growth", x = "Time", y = "Population", colour = "Model") +
+  theme_minimal() + 
+  theme(plot.title = element_text(hjust = 0.5))
 
 sink(file = "package-versions.txt")
 sessionInfo()
