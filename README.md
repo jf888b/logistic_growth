@@ -9,11 +9,11 @@ In the fit_linear_model file, the data was split into two parts and fit into lin
 <br /> In the plot_data_and_model file, a function was created to estimate population size based on the time given and a formula using inputs from the linear models of fit_linear_model. N0 was taken by looking at the N at time 0 in the experiment.csv file, which was 879. r was the rate of growth in the first model case where t is small, which was 0.009902. K is the carrying capacity shown by the second model case which was 5.903e+10. 
 
 ## Question 2.
-<br /> **exponential growth:** N = N0*e^(r*t)
+<br /> **Exponential Growth:** N = N0*e^(r*t)
 <br /> N = 879*e^(0.009902*4980)
 <br /> N = 2.29e+24
 
-<br /> **logistic growth:** N <- K/(1+((K-N0/N0))e^(-rt))
+<br /> **Logistic Growth:** N <- K/(1+((K-N0/N0))e^(-rt))
 <br /> At time = 4980, N = 5.903e+10/(1+(5.903e+10-879/879)e^(-0.009902*4980))
 <br /> N = 5.903e+10
 
