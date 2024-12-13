@@ -20,6 +20,7 @@ In the fit_linear_model file, the data was split into two parts and fit into lin
 <br /> The exponential growth model is much greater than the logistic growth because there is no limit from the carrying capacity.
 
 ## Question 3.
+Code in exp_log_graphs file.
 <img width="554" alt="Screenshot 2024-12-13 at 1 01 06 AM" src="https://github.com/user-attachments/assets/84be01a9-678d-4e8d-a4ad-6324a47c98ba" />
 
 
