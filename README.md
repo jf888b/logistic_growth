@@ -21,7 +21,7 @@ In the fit_linear_model file, the data was split into two parts and fit into lin
 
 ## Question 3.
 Code in exp_log_graphs file.
-<img width="554" alt="Screenshot 2024-12-13 at 1 01 06 AM" src="https://github.com/user-attachments/assets/84be01a9-678d-4e8d-a4ad-6324a47c98ba" />
+<img width="552" alt="Screenshot 2024-12-13 at 9 07 29 AM" src="https://github.com/user-attachments/assets/57c3636f-3d69-48a9-b42e-b546b9ab6dae" />
 
 
   
